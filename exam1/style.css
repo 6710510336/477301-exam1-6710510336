@@ -1,0 +1,222 @@
+/* ===== Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  background-color: #fdf6f4;
+  color: #3d2b2b;
+  line-height: 1.7;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #f4a7b9;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Itim', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+header .welcome {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header .tagline {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+}
+
+/* ===== Main / Cards ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2,
+.opening-hours h2,
+.contact-form h2 {
+  color: #b5495b;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #f4a7b9;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#about img {
+  border-radius: 10px;
+  margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Table ===== */
+.flower-menu {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.flower-menu th,
+.flower-menu td {
+  border: 1px solid #eecfd6;
+  padding: 12px;
+  text-align: left;
+}
+
+.flower-menu th {
+  background-color: #f4a7b9;
+  color: white;
+}
+
+.flower-menu tr:nth-child(even) {
+  background-color: #fdf0f2;
+}
+
+.flower-menu tr:hover {
+  background-color: #ffe0e6;
+}
+
+/* ===== Opening Hours ===== */
+.opening-hours {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+}
+
+.hours-list {
+  list-style: none;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0e0e3;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-list li span:first-child {
+  font-weight: 700;
+  color: #b5495b;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #3d2b2b;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #eecfd6;
+  border-radius: 8px;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f4a7b9;
+  box-shadow: 0 0 0 3px rgba(244, 167, 185, 0.3);
+}
+
+.contact-form button {
+  background-color: #b5495b;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #943a49;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .card, .opening-hours, .contact-form {
+    padding: 20px;
+  }
+}
+

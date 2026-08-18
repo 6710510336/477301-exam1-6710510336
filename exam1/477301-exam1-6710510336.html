@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Petalie Bloom</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
             <li><a href="#contact">ติดต่อเรา</a></li>
         </ul>
     </nav>
-    <h3>ยินดีต้อนรับสู่ร้าน Petalie Bloom ร้านดอกไม้ใจกลางเมืองหาดใหญ่</h3>
+    <h2>ยินดีต้อนรับสู่ร้าน Petalie Bloom ร้านดอกไม้ใจกลางเมืองหาดใหญ่</h2>
     <p class="tagline">โดยร้านของเรามีทั้งดอกไม้สดและดอกไม้ปลอม ราคาถูก คุณภาพดี 
         เหมาะสำหรับซื้อในโอกาสพิเศษต่างๆ เช่น วันเกิด วันครบรอบ วันวาเลนไทน์ หรือแม้กระทั่งวันแม่และวันพ่อ
         แถมยังมีบริการจัดส่งดอกไม้ถึงหน้าบ้านอีกด้วย
@@ -83,7 +86,7 @@
         </ul>
     </section>
 
-    <section class="contact-form">
+    <section id="contact-form" class="contact -form">
         <h2>ติดต่อเรา</h2>
         <form action="submit_form.php" method="post">
             <div class="form-group">
@@ -96,7 +99,7 @@
             </div>
             <div class="form-group">
                 <label for="phone">เบอร์โทรศัพท์:</label>
-                <textarea id="phone" name="phone" required></textarea>
+                <input type="tel" id="phone" name="phone" required>
             </div>
             <div class="form-group">
                 <label for="flower">ดอกไม้ที่สนใจ:</label>
