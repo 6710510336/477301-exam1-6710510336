@@ -83,7 +83,39 @@
         </ul>
     </section>
 
-  
+    <section class="contact-form">
+        <h2>ติดต่อเรา</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">ชื่อ:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <textarea id="phone" name="phone" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="flower">ดอกไม้ที่สนใจ:</label>
+                <select name="flower" id="flower" required>
+                    <option value="">เลือกดอกไม้</option>
+                    <option value="ดอกกุหลาบแดง">ดอกกุหลาบแดง</option>
+                    <option value="ดอกทิวลิป">ดอกทิวลิป</option>
+                    <option value="ดอกทานตะวัน">ดอกทานตะวัน</option>
+                    <option value="ดอกลิลลี่">ดอกลิลลี่</option>
+                    <option value="ดอกคาร์เนชั่น">ดอกคาร์เนชั่น</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">ข้อความเพิ่มเติม:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">ส่งข้อมูล</button>
+        </form>
+    </section>
 </main>
 </body>
 </html>
